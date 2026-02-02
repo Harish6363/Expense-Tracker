@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#expense-list li {
+  padding: 8px;
+  background-color: #eee;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#expense-list li button {
+  font-size: 16px;
+  color: red;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Fade-in animation for expense items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#expense-list li {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Hover animation for inputs and button */
+input:focus {
+  outline: 2px solid #007bff;
+  transition: outline 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Main layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Expense cards */
+#expense-list li {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Total bar */
+#total-bar {
+  position: sticky;
+  bottom: 0;
+  background: #007bff;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Button styles */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
